@@ -1,1 +1,1 @@
-"# qa2-javaguru" 
+Test automation framework for www.javaguru.lv website and registration (Google) forms
