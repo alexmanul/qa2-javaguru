@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 
 public interface RegistrationForm {
 
-
     By FIRST_NAME_FIELD = By.id("entry_1000000");
     By LAST_NAME_FIELD = By.id("entry_1000001");
     By PHONE = By.id("entry_1000002");

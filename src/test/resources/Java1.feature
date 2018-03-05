@@ -1,6 +1,6 @@
 Feature: Tests for JavaGuru website: Java1 page and registration form
 
-  Scenario Outline: As an end user I am able to register in QA course registration form
+  Scenario Outline: As an end user I am able to register in Java 1 course registration form
     Given User is on the 'www.javaguru.lv' page
     When User opens Java 1 course
     And User opens Java 1 registration form

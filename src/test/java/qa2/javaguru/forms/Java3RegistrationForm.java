@@ -6,7 +6,7 @@ import qa2.javaguru.core.BaseFunctions;
 
 public class Java3RegistrationForm implements RegistrationForm {
 
-    private static final By DISCOUNT = By.id("entry_337407387");
+    public static final By DISCOUNT = By.id("entry_337407387");
     private static final Logger LOGGER = Logger.getLogger(Java1RegistrationForm.class);
     private BaseFunctions baseFunctions;
 
@@ -29,4 +29,3 @@ public class Java3RegistrationForm implements RegistrationForm {
         //baseFunctions.click(SUBMIT_FORM);
     }
 }
-

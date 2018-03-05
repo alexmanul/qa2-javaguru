@@ -26,5 +26,4 @@ public class PythonRegistrationForm implements RegistrationForm {
         baseFunctions.fillInput(DISCOUNT, discount);
         //baseFunctions.click(SUBMIT_FORM);
     }
-
 }

@@ -146,15 +146,15 @@ public class StepDefinitions {
         cSharpRegistrationForm = cSharpPage.openRegistrationForm();
     }
 
-    @When("User switches tabs")
-    public void switch_tabs() {
-        baseFunctions.switchingTabs();
-    }
-
     @When("User opens PHP registration form")
     public void open_php_registration_form_link() {
         scenario.write("Trying to open PHP course registration form");
         phpRegistrationForm = phpPage.openRegistrationForm();
+    }
+
+    @When("User switches tabs")
+    public void switch_tabs() {
+        baseFunctions.switchingTabs();
     }
 
     @When("User opens QA course")
@@ -200,6 +200,43 @@ public class StepDefinitions {
         baseFunctions.closePages();
     }
 
+    @When("User fills Java 2 registration form with data")
+    public void fill_java2_registration_form(DataTable dataTable) {
+        List<List<String>> data = dataTable.raw();
+        baseFunctions.findElement(FIRST_NAME_FIELD).sendKeys(data.get(0).get(1));
+        baseFunctions.findElement(Java2RegistrationForm.LAST_NAME_FIELD).sendKeys(data.get(1).get(1));
+        baseFunctions.findElement(Java2RegistrationForm.PHONE).sendKeys(data.get(2).get(1));
+        baseFunctions.findElement(Java2RegistrationForm.EMAIL).sendKeys(data.get(3).get(1));
+        baseFunctions.findElement(Java2RegistrationForm.DISCOUNT).sendKeys(data.get(4).get(1));
+        baseFunctions.closePages();
+    }
+
+    @When("User fills Java 3 registration form with data")
+    public void fill_java3_registration_form(DataTable dataTable) {
+        List<List<String>> data = dataTable.raw();
+        baseFunctions.findElement(FIRST_NAME_FIELD).sendKeys(data.get(0).get(1));
+        baseFunctions.findElement(LAST_NAME_FIELD).sendKeys(data.get(1).get(1));
+        baseFunctions.findElement(PHONE).sendKeys(data.get(2).get(1));
+        baseFunctions.findElement(EMAIL).sendKeys(data.get(3).get(1));
+        baseFunctions.findElement(PROGRAMMING_SKILLS).sendKeys(data.get(4).get(1));
+        baseFunctions.findElement(COMMENT).sendKeys(data.get(5).get(1));
+        baseFunctions.findElement(Java3RegistrationForm.DISCOUNT).sendKeys(data.get(6).get(1));
+        baseFunctions.closePages();
+    }
+
+    @When("User fills Java 4 registration form with data")
+    public void fill_java4_registration_form(DataTable dataTable) {
+        List<List<String>> data = dataTable.raw();
+        baseFunctions.findElement(FIRST_NAME_FIELD).sendKeys(data.get(0).get(1));
+        baseFunctions.findElement(LAST_NAME_FIELD).sendKeys(data.get(1).get(1));
+        baseFunctions.findElement(PHONE).sendKeys(data.get(2).get(1));
+        baseFunctions.findElement(EMAIL).sendKeys(data.get(3).get(1));
+        baseFunctions.findElement(PROGRAMMING_SKILLS).sendKeys(data.get(4).get(1));
+        baseFunctions.findElement(COMMENT).sendKeys(data.get(5).get(1));
+        baseFunctions.findElement(Java4RegistrationForm.DISCOUNT).sendKeys(data.get(6).get(1));
+//        baseFunctions.closePages();
+    }
+
     @When("User fills Python registration form with data")
     public void fill_python_registration_form(DataTable dataTable) {
         List<List<String>> data = dataTable.raw();
@@ -222,7 +259,34 @@ public class StepDefinitions {
         baseFunctions.findElement(EMAIL).sendKeys(data.get(3).get(1));
         baseFunctions.findElement(PROGRAMMING_SKILLS).sendKeys(data.get(4).get(1));
         baseFunctions.findElement(COMMENT).sendKeys(data.get(5).get(1));
-        baseFunctions.findElement(PythonRegistrationForm.DISCOUNT).sendKeys(data.get(6).get(1));
+        baseFunctions.findElement(CSharpRegistrationForm.DISCOUNT).sendKeys(data.get(6).get(1));
         baseFunctions.closePages();
+    }
+
+    @When("User fills Android registration form with data")
+    public void fill_android_registration_form(DataTable dataTable) {
+        List<List<String>> data = dataTable.raw();
+        baseFunctions.findElement(FIRST_NAME_FIELD).sendKeys(data.get(0).get(1));
+        baseFunctions.findElement(LAST_NAME_FIELD).sendKeys(data.get(1).get(1));
+        baseFunctions.findElement(PHONE).sendKeys(data.get(2).get(1));
+        baseFunctions.findElement(EMAIL).sendKeys(data.get(3).get(1));
+        baseFunctions.findElement(PROGRAMMING_SKILLS).sendKeys(data.get(4).get(1));
+        baseFunctions.findElement(COMMENT).sendKeys(data.get(5).get(1));
+        baseFunctions.findElement(AndroidRegistrationForm.DISCOUNT).sendKeys(data.get(6).get(1));
+        baseFunctions.closePages();
+    }
+
+    @When("User fills PHP registration form with data")
+    public void fill_php_registration_form(DataTable dataTable) {
+        List<List<String>> data = dataTable.raw();
+        baseFunctions.findElement(FIRST_NAME_FIELD).sendKeys(data.get(0).get(1));
+        baseFunctions.findElement(LAST_NAME_FIELD).sendKeys(data.get(1).get(1));
+        baseFunctions.findElement(PHONE).sendKeys(data.get(2).get(1));
+        baseFunctions.findElement(EMAIL).sendKeys(data.get(3).get(1));
+        baseFunctions.findElement(PROGRAMMING_SKILLS).sendKeys(data.get(4).get(1));
+        baseFunctions.findElement(HAVING_PC).sendKeys(data.get(5).get(1));
+        baseFunctions.findElement(ADVISER).sendKeys(data.get(6).get(1));
+        baseFunctions.findElement(COMMENT).sendKeys(data.get(7).get(1));
+//        baseFunctions.closePages();
     }
 }

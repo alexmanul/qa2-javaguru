@@ -6,10 +6,10 @@ import qa2.javaguru.core.BaseFunctions;
 
 public class Java2RegistrationForm implements RegistrationForm {
 
-    private static final By LAST_NAME_FIELD = By.id("entry_1000003");
-    private static final By PHONE = By.id("entry_1000001");
-    private static final By EMAIL = By.id("entry_1000004");
-    private static final By DISCOUNT = By.id("entry_1849903685");
+    public static final By LAST_NAME_FIELD = By.id("entry_1000003");
+    public static final By PHONE = By.id("entry_1000001");
+    public static final By EMAIL = By.id("entry_1000004");
+    public static final By DISCOUNT = By.id("entry_1849903685");
     private static final Logger LOGGER = Logger.getLogger(Java2RegistrationForm.class);
     private BaseFunctions baseFunctions;
 

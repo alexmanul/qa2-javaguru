@@ -1,6 +1,6 @@
 Feature: Tests for JavaGuru website: Python page and registration form
 
-  Scenario Outline: Python course registration form
+  Scenario Outline: As an end user I am able to register in Python course registration form
     Given User is on the 'www.javaguru.lv' page
     When User opens Python course
     And User opens Python registration form
