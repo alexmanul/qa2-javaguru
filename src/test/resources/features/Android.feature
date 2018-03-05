@@ -1,11 +1,12 @@
-Feature: Tests for JavaGuru website: C# page and registration form
+@Android @registration
+Feature: Tests for JavaGuru website: Android page and registration form
 
-  Scenario Outline: As an end user I am able to register in C# course registration form
+  Scenario Outline: As an end user I am able to register in Android course registration form
     Given User is on the 'www.javaguru.lv' page
-    When User opens C# course
-    And User opens C# registration form
+    When User opens Android course
+    And User opens Android registration form
     And User switches tabs
-    Then User fills C# registration form with data
+    Then User fills Android registration form with data
       | First Name           | <first_name> |
       | Last Name            | <last_name>  |
       | Contact Phone        | <phone>      |

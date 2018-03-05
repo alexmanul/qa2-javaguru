@@ -1,3 +1,4 @@
+@Java1 @registration
 Feature: Tests for JavaGuru website: Java1 page and registration form
 
   Scenario Outline: As an end user I am able to register in Java 1 course registration form
@@ -18,6 +19,6 @@ Feature: Tests for JavaGuru website: Java1 page and registration form
       | Discount coupon code | <discount>   |
 
     Examples:
-      | first_name | last_name | phone    | email             | group        | skills | laptop | adviser | comments           | discount |
+      | first_name | last_name | phone    | email               | group        | skills | laptop | adviser | comments           | discount |
       | John       | Doe       | 77777777 | jd@mailinator.com | RU (вторник) | No     | Yes    | Dmitry  | Delete this please | 66613666 |
       | John       | Kramer    | 38383838 | jk@mailinator.com | RU (суббота) | Yes    | No     | Dmitry  | The Saw is the Law | 25252525 |

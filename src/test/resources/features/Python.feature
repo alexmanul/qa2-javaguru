@@ -1,3 +1,4 @@
+@Python @registration
 Feature: Tests for JavaGuru website: Python page and registration form
 
   Scenario Outline: As an end user I am able to register in Python course registration form

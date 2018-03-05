@@ -1,3 +1,4 @@
+@QA @registration
 Feature: Tests for JavaGuru website: QA page and registration form
 
   Scenario Outline: As an end user I am able to register in QA course registration form

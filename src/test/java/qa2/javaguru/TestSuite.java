@@ -1,7 +1,8 @@
-package qa2.javaguru.test2;
+package qa2.javaguru;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
+import qa2.javaguru.test2.*;
 
 @RunWith(Suite.class)
 

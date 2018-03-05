@@ -1,3 +1,4 @@
+@Java2 @registration
 Feature: Tests for JavaGuru website: Java2 page and registration form
 
   Scenario Outline: As an end user I am able to register in Java 2 course registration form

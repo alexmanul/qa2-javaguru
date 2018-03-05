@@ -1,11 +1,12 @@
-Feature: Tests for JavaGuru website: Java 3 page and registration form
+@Java4 @registration
+Feature: Tests for JavaGuru website: Java4 page and registration form
 
-  Scenario Outline: As an end user I am able to register in Java 3 course registration form
+  Scenario Outline:  As an end user I am able to register in Java 4 course registration form
     Given User is on the 'www.javaguru.lv' page
-    When User opens Java 3 course
-    And User opens Java 3 registration form
+    When User opens Java 4 course
+    And User opens Java 4 registration form
     And User switches tabs
-    Then User fills Java 3 registration form with data
+    Then User fills Java 4 registration form with data
       | First Name           | <first_name> |
       | Last Name            | <last_name>  |
       | Contact Phone        | <phone>      |
@@ -13,6 +14,7 @@ Feature: Tests for JavaGuru website: Java 3 page and registration form
       | Programming skills   | <skills>     |
       | Comments, questions  | <comments>   |
       | Discount coupon code | <discount>   |
+
     Examples:
       | first_name | last_name | phone    | email             | skills | comments           | discount |
       | John       | Doe       | 77777777 | jd@mailinator.com | No     | Delete this please | 66613666 |

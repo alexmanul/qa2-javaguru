@@ -1,3 +1,4 @@
+@PHP @registration
 Feature: Tests for JavaGuru website: PHP page and registration form
 
   Scenario Outline: PHP course registration form
@@ -16,7 +17,6 @@ Feature: Tests for JavaGuru website: PHP page and registration form
       | Comments, questions | <comments>   |
 
     Examples:
-      | first_name | last_name | phone    | email             | skills | laptop | adviser | comments           |
-      | John       | Doe       | 77777777 | jd@mailinator.com | No     | Yes    | Dmitry  | Delete this please |
-      | John       | Kramer    | 38383838 | jk@mailinator.com | Yes    | No     | Dmitry  | The Saw is the Law |
-    
+      | first_name | last_name | phone    | email             |skills | laptop | adviser | comments           |
+      | John       | Doe       | 77777777 | jd@mailinator.com | N     | Yes    | Dmitry  | Delete this please |
+      | John       | Kramer    | 38383838 | jk@mailinator.com | Yes   | No     | Dmitry  | The Saw is the Law |

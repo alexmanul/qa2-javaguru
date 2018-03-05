@@ -1,11 +1,12 @@
-Feature: Tests for JavaGuru website: Java4 page and registration form
+@CSharp @registration
+Feature: Tests for JavaGuru website: C# page and registration form
 
-  Scenario Outline:  As an end user I am able to register in Java 4 course registration form
+  Scenario Outline: As an end user I am able to register in C# course registration form
     Given User is on the 'www.javaguru.lv' page
-    When User opens Java 4 course
-    And User opens Java 4 registration form
+    When User opens C# course
+    And User opens C# registration form
     And User switches tabs
-    Then User fills Java 4 registration form with data
+    Then User fills C# registration form with data
       | First Name           | <first_name> |
       | Last Name            | <last_name>  |
       | Contact Phone        | <phone>      |
