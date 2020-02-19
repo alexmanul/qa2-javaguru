@@ -1,0 +1,34 @@
+{
+  "HEADER": {
+    "EMAIL": "javagurulv@gmail.com",
+    "PHONE": "(+371) 26120960",
+    "RU": {
+      "question": "Задать вопрос",
+      "moodle": "moodle",
+      "language": "LV"
+    },
+    "LV": {
+      "question": "Uzdod jautājumu",
+      "moodle": "moodle",
+      "language": "RU"
+    }
+  },
+  "MENU": {
+    "RU": {
+      "courses": "КУРСЫ",
+      "workshops": "ВОРКШОПЫ",
+      "timetable": "РАСПИСАНИЕ",
+      "registration": "РЕГИСТРАЦИЯ",
+      "FAQ": "FAQ",
+      "news": "НОВОСТИ",
+      "aboutUs": "О НАС"
+    },
+    "LV": {
+      "trainings": "Apmācības",
+      "timetable": "Kalendārs",
+      "registration": "Reģistrācija",
+      "FAQ": "FAQ",
+      "contacts": "KONTAKTI"
+    }
+  }
+}
