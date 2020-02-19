@@ -1,9 +1,9 @@
 package qa2.javaguru.Pages.Partials;
 
 import org.openqa.selenium.By;
+import qa2.javaguru.Elements.Button;
+import qa2.javaguru.Elements.Icon;
 import qa2.javaguru.Utils.CommonApproach.Identificator;
-import qa2.javaguru.elements.Button;
-import qa2.javaguru.elements.Icon;
 
 public interface Menu {
 

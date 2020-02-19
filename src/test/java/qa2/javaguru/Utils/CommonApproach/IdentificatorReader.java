@@ -1,8 +1,8 @@
 package qa2.javaguru.Utils.CommonApproach;
 
 import lombok.extern.log4j.Log4j;
+import qa2.javaguru.Elements.UIElement;
 import qa2.javaguru.Pages.BasePage;
-import qa2.javaguru.elements.UIElement;
 
 import java.lang.reflect.Method;
 

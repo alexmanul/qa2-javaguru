@@ -3,11 +3,11 @@ package qa2.javaguru.Steps;
 import cucumber.api.DataTable;
 import cucumber.api.Scenario;
 import cucumber.api.java.en.And;
+import qa2.javaguru.Elements.UIElement;
 import qa2.javaguru.Pages.BasePage;
 import qa2.javaguru.Pages.S100MainPage;
 import qa2.javaguru.Utils.CommonApproach.IdentificatorReader;
 import qa2.javaguru.Utils.CustomAssertions;
-import qa2.javaguru.elements.UIElement;
 
 import java.util.List;
 import java.util.Map;

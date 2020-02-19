@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import qa2.javaguru.Elements.Button;
 import qa2.javaguru.Utils.TestDataReader;
 import qa2.javaguru.Utils.Utils;
-import qa2.javaguru.elements.Button;
 
 import java.util.ArrayList;
 

@@ -3,10 +3,10 @@ package qa2.javaguru.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import qa2.javaguru.Elements.Label;
 import qa2.javaguru.Pages.Partials.Header;
 import qa2.javaguru.Pages.Partials.Menu;
 import qa2.javaguru.Utils.CommonApproach.Identificator;
-import qa2.javaguru.elements.Label;
 
 public class S101RegistrationPage extends BasePage implements Header, Menu {
 

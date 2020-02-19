@@ -1,4 +1,4 @@
-package qa2.javaguru.elements;
+package qa2.javaguru.Elements;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
