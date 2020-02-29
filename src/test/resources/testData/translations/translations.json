@@ -3,25 +3,25 @@
     "EMAIL": "javagurulv@gmail.com",
     "PHONE": "(+371) 26120960",
     "RU": {
-      "question": "ЗАДАТЬ ВОПРОС",
-      "moodle": "MOODLE",
-      "language": "LV"
+      "QUESTION": "ЗАДАТЬ ВОПРОС",
+      "MOODLE": "MOODLE",
+      "LANGUAGE": "LV"
     },
     "LV": {
-      "question": "Uzdod jautājumu",
-      "moodle": "moodle",
-      "language": "RU"
+      "QUESTION": "Uzdod jautājumu",
+      "MOODLE": "moodle",
+      "LANGUAGE": "RU"
     }
   },
   "MENU": {
     "RU": {
-      "courses": "КУРСЫ",
-      "workshops": "ВОРКШОПЫ",
-      "timetable": "РАСПИСАНИЕ",
-      "registration": "РЕГИСТРАЦИЯ",
+      "COURSES": "КУРСЫ",
+      "WORKSHOPS": "ВОРКШОПЫ",
+      "TIMETABLE": "РАСПИСАНИЕ",
+      "REGISTRATION": "РЕГИСТРАЦИЯ",
       "FAQ": "FAQ",
-      "news": "НОВОСТИ",
-      "aboutUs": "О НАС"
+      "NEWS": "НОВОСТИ",
+      "ABOUT_US": "О НАС"
     },
     "LV": {
       "trainings": "Apmācības",
@@ -29,6 +29,39 @@
       "registration": "Reģistrācija",
       "FAQ": "FAQ",
       "contacts": "KONTAKTI"
+    }
+  },
+  "REGISTER": {
+    "RU": {
+      "TITLE": "Регистрация на курсы",
+      "SUBTITLE": "Наши Бонусы",
+      "PROS": [
+        {
+          "1": "Для физических лиц есть возможность разбить полную стоимость курса на несколько платежей"
+        },
+        {
+          "2": "По договоренности можно сдвинуть или продлить срок оплаты"
+        },
+        {
+          "3": "Всем школьникам и студентам скидка 20%"
+        },
+        {
+          "4": "При оплате курса одним платежом - скидка 10%"
+        }
+      ]
+    },
+    "LV": {}
+  },
+  "FOOTER": {
+    "RU": {
+      "ADDRESS": "Skolas 21, Rīga, Latvija",
+      "EMAIL": "javagurulv@gmail.com",
+      "PHONE": "(+371) 26120960"
+    },
+    "LV": {
+      "ADDRESS": "Skolas 21, Rīga, Latvija",
+      "EMAIL": "javagurulv@gmail.com",
+      "PHONE": "(+371) 26120960"
     }
   }
 }
