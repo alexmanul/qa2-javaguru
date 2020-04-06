@@ -3,10 +3,18 @@ package Utils;
 import Utils.InternalClasses.CustomDate;
 import com.google.gson.Gson;
 import lombok.extern.log4j.Log4j;
+import org.apache.commons.io.FileUtils;
+import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.json.JSONObject;
 
 import java.io.File;
 import java.io.FilenameFilter;
+import java.io.IOException;
+import java.net.URL;
 import java.security.SecureRandom;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
@@ -76,6 +84,25 @@ public class Utils {
             log.debug("Converted amount is " + result);
         }
         return result;
+    }
+
+    public static void saveFile(URL url, String imgSavePath, String token) {
+        boolean isSucceed = true;
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+
+        HttpGet httpGet = new HttpGet(url.toString());
+        httpGet.addHeader("Authorization", token);
+
+        try {
+            CloseableHttpResponse httpResponse = httpClient.execute(httpGet);
+            HttpEntity imageEntity = httpResponse.getEntity();
+            if (imageEntity != null) {
+                FileUtils.copyInputStreamToFile(imageEntity.getContent(), new File(imgSavePath));
+            }
+        } catch (IOException e) {
+            isSucceed = false;
+        }
+        httpGet.releaseConnection();
     }
 
     public File renameFile(String pathToFile, String oldName, String newName) {
