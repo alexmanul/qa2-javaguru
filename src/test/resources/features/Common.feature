@@ -1,3 +1,4 @@
+@SmokeTest
 Feature: Tests for JavaGuru website. Common elements
 
   Scenario: 000. Check redirection by registration button

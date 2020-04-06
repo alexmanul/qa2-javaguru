@@ -38,7 +38,7 @@ public class CommonSteps extends BaseSteps {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     @And("^I navigate to JAVAGURU.LV website$")
-    public void INavigateToJGWebsite() throws Exception {
+    public void INavigateToJGWebsite() {
         mainPage.navigateToPortal();
         mainPage.waitPageIsLoaded();
     }
@@ -58,7 +58,7 @@ public class CommonSteps extends BaseSteps {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     @And("^I see browser title is '(.*)'$")
-    public void ISeeBrowserTitle(String title) throws Exception {
+    public void ISeeBrowserTitle(String title) {
         CustomAssertions.assertThatEquals(driver.getTitle(), title, "Browser title is wrong");
     }
 
